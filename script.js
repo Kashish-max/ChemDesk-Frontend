@@ -50,3 +50,7 @@ document.querySelector("#upfile").addEventListener("change", function() {
 document.querySelector("#submit").addEventListener("click", function(){
 
 });
+
+function submitInfo() {
+	document.infoSec.display = "none";
+}
