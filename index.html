@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChemDesk</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Fonts Links -->
+<!--     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+ -->
+    <!-- Style Sheets -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" />--> 
+    <link rel="stylesheet" type="text/css" href="./main.css">
+  </head>
+
+  <body>
+  <div id="loader">
+    <!-- <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_Gh0AU0.json"  background="#0a192f"  speed="1.5"  style="z-index: 999;"  loop autoplay></lottie-player> -->
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_P6bIYx.json"  background="#0a192f"  speed="0.8"  style="z-index: 999"  loop  autoplay></lottie-player>
+  </div>
+  <div class="HomeSection">
+    <div class="Info getInfo">
+      <div class="beforeStart">
+        <h1>CHEM<span>DESK</span></h1>
+        <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_ftbdegwh.json"  background="transparent"  speed="0.5"  style="width: 320px; height: 320px; margin: 0% auto;"  loop  autoplay></lottie-player>
+        <!--   <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_X2u2xK.json"  background="transparent"  speed="1"  style="width: 200px;  height: 200px; margin: 4% auto;"  loop  autoplay></lottie-player> -->
+        <p class="bDescription">ChemDesk is a utility designed to convert graphical representations of chemical structures, as they appear in journal articles, patent documents, textbooks, trade magazines etc., into SMILES (Simplified Molecular Input Line Entry Specification - see http://en.wikipedia.org/wiki/SMILES) or SD files - a computer recognizable molecular structure format.</p>
+        <div class="uploadBtn" onClick="getSecondView()">Get Started</div>
+      </div>
+      <div class="afterStart">
+        <h1>C<span>D:</span> Chem<span>Desk</span></h1>
+        <!-- <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_X2u2xK.json"  background="transparent"  speed="1"  style="width: 200px;  height: 200px; margin: 4% auto;"  loop  autoplay></lottie-player> -->
+        <p class="aDescription">ChemDesk can read a document in any of the over 90 graphical formats parseable by ImageMagick - including GIF, JPEG, PNG, TIFF, PDF, PS etc., and generate the SMILES or SDF representation of the molecular structure images encountered within that document.</p>
+        <h2>UPLOAD IMAGE</h2>
+        <form method="POST" enctype="multipart/form-data" class="form" action="">
+          <div class="uploadBtn" onClick="getFile()">Choose File</div>
+          <p class="fileName">No file chosen</p>
+          <div class="hideBtn">
+            <input id="upfile" type="file">
+          </div>
+          <input type="submit" id="submit" value='Get Info'>
+        </form>
+
+      </div>
+    </div>
+<!--     <div class="fixArrow">
+      <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_m2nymhfz.json" mode="bounce"  background="transparent"  speed="1" loop autoplay></lottie-player>
+    </div> -->
+    <div class="Info displayInfo">
+      <div class="preview">
+        <dotlottie-player src="https://assets5.lottiefiles.com/dotlotties/dlf10_rqt4boqs.lottie" mode="bounce" background="transparent"  speed="1" loop  autoplay></dotlottie-player>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2500,
+    });
+  </script>
+  </body>
+</html>
